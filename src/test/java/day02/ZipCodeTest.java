@@ -55,7 +55,7 @@ public class ZipCodeTest {
                 .statusCode(is(200))
                 .body("'country abbreviation'", is("US"))
                 .body("places[0].latitude",is("40.694"))
-                .body("places[-2].'post code'",is("11255"))
+                .body("places[-1].'post code'",is("11255"))
 
 
         ;
