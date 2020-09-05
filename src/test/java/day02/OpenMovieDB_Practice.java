@@ -27,7 +27,10 @@ public class OpenMovieDB_Practice {
     then()
             .log().all()
             .statusCode(200)
-            .body("Title",containsString("Boss Baby"));
+            .body("Title",containsString("Boss Baby"))
+            .body("Ratings[0].Value",is("6.3/10"))
+            .body("Ratings[1].Value",is("50/100"))
+    ;
 }
 
 
